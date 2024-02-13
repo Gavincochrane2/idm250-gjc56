@@ -24,6 +24,8 @@ ul {
     justify-content: space-between;
     padding-right: 40px;
     margin-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 li{
     background-color: grey;
@@ -42,6 +44,7 @@ a {
     border-width: 2px;
     border-style: solid;
     text-decoration: none;
+    margin-top: 40px;
 }
 Header {
     background-color: grey;
@@ -57,4 +60,16 @@ footer h2{
 
 div.foot{
     background-color: grey;
+}
+
+ul#menu-primary-2024-menu.menu {
+    padding-top: 40px;
+}
+
+p.footer {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    color: white;
+    padding: 10px;
 }

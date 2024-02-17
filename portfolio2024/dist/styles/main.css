@@ -73,3 +73,74 @@ p.footer {
     color: white;
     padding: 10px;
 }
+
+div.content {
+    margin: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: rgb(156, 153, 153);
+
+}
+
+h2.wp-block-heading.has-text-align-center{
+    background-color: rgb(156, 153, 153);
+}
+div.wp-block-media-text.is-stacked-on-mobile {
+    background-color: rgb(156, 153, 153);
+}
+
+div.wp-block-media-text__content{
+    background-color: rgb(156, 153, 153);
+}
+
+h3 {
+    background-color: rgb(156, 153, 153);
+}
+
+p {
+    background-color: rgb(156, 153, 153);
+}
+
+hr.wp-block-separator.has-alpha-channel-opacity {
+    background-color: rgb(156, 153, 153);
+}
+
+h4.wp-block-heading.has-text-align-center {
+    background-color: rgb(156, 153, 153);
+    margin-top: 0ch;
+    margin-bottom: 0ch;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ol li {
+    list-style: decimal-leading-zero;
+    background-color: rgb(156, 153, 153);
+}
+ol{
+    background-color: rgb(156, 153, 153);
+}
+
+h5{
+    background-color: rgb(156, 153, 153);
+}
+
+div.wp-block-file {
+    background-color: rgb(156, 153, 153);
+}
+
+h6 {
+    background-color: rgb(156, 153, 153);
+}
+
+div.wp-block-embed__wrapper {
+    background-color: rgb(156, 153, 153);
+}
+video {
+    padding-left: 10px;
+    background-color: rgb(156, 153, 153);
+}

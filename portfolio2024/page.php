@@ -8,13 +8,15 @@
 </head>
 <body>
 <?php get_header(); ?>
-    <h1>
-        <?php
+<div class="content">
+   
+  <?php  
+   echo get_the_content(); 
 
-echo get_the_title();
+  ?>
 
-        ?>
-    </h1>
+    <h3>This is a page.php template</h3>
+</div>
     <?php get_footer(); ?>
 </body>
 </html>

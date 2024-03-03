@@ -8,7 +8,7 @@
 404
 </h1>
 <h4>Page not found, please try again!</h4>
-</div>
+
 
 <br>
 <br>
@@ -20,4 +20,5 @@
 <br>
 <br>
 <br>
+</div>
 <?php get_footer(); ?>

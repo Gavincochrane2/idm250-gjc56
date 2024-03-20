@@ -57,6 +57,7 @@ function register_custom_post_types()
         'rewrite' => ['slug' => 'projects'],
         'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
         'menu_position' => 5,
+        'menu_icon' => 'dashicons-portfolio',
         // 'taxonomies' => ['project-categories'], // Name of custom taxonomy. Only need if you have a custom taxonomy
         'show_in_rest' => true,
     ];

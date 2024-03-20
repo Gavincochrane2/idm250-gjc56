@@ -8,21 +8,25 @@ echo get_the_content();
 ?>
 </div>
 <?php 
-$projects = new WP_Query([
+$query = new WP_Query([
     'post_type' => 'projects',
-    'posts_per_page' => 3,
+    'posts_per_page' => 4,
     'orderby' => 'date',
     'order' => 'DESC'
 ]);
 
-// if (have_posts()) :
-//     while(have_posts()) : the_post();
-// echo '<h2>' . get_the_title() . '</h2>';
-// echo '<hr>';
-// endwhile;
-// else:
-//     echo '<p> No content found </p>';
-// endif;
+if ($query->have_posts()) :
+    while($query->have_posts()) : $query->the_post();
+echo '<h3>' . get_the_title() . '</h3>';
+echo '<p>' . get_the_excerpt() . '</p>';
+echo '<a href="' . get_the_permalink() . '">See more</a>';
+echo '<br>';
+endwhile;
+wp_reset_postdata();
+else:
+    echo '<p> No content found </p>';
+
+endif;
 
 
 // have to add in the custom post type "projects" for this to work

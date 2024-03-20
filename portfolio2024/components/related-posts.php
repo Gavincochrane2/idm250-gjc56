@@ -20,17 +20,17 @@ $related_posts = new WP_Query([
 ?>
 
 <?php if ($related_posts->have_posts()) : ?>
-<section class="py-20 bg-gray-100">
-  <div class="w-full mx-auto max-w-7xl">
-    <h2 class="text-3xl font-bold mb-8">Related Posts</h2>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+<section>
+  <div>
+    <h2>Related Posts</h2>
+    <div>
       <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
-      <div class="bg-white p-8 shadow-md">
+      <div>
         <a href="<?php the_permalink(); ?>">
           <img src="<?php echo $image['url'] ?>" alt="<?php $image['alt'] ?>" class="mb-4">
-          <h3 class="text-xl font-bold">
+          <h3>
             <?php echo get_the_title(); ?></h3>
-          <p class="text-gray-600"><?php echo get_the_excerpt(); ?>
+          <p><?php echo get_the_excerpt(); ?>
           </p>
         </a>
       </div>

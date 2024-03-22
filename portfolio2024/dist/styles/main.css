@@ -27,8 +27,8 @@ margin: auto;
 }
 h1{
  text-align: center;
- color: white;
- background-color: grey;
+
+ background-color: rgb(156, 153, 153);
 }
 h3 {
     text-align: center;
@@ -36,6 +36,7 @@ h3 {
  background-size: 60%;
  margin-top: 0;
  margin-bottom: 10px;
+ margin-top: 20px;
  margin-left: 15%;
  margin-right: 15%;
 }
@@ -56,6 +57,7 @@ ul {
     margin-bottom: 0px;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-top: 0ch;
 }
 li{
     background-color: grey;
@@ -116,12 +118,40 @@ div.content {
 
 }
 
+img.thumb {
+    max-height: 40vh;
+    max-width: 60vw;
+    justify-content: center;
+    margin: auto;
+}
+
+div.default {
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: rgb(156, 153, 153);
+}
+
+div.archive {
+    background-color: rgb(156, 153, 153);
+    border-radius: 4px;
+    border-style:ridge;
+    border-width: 4px;
+    border-color: black;
+}
+
+
 h2.wp-block-heading {
     background-color: rgb(156, 153, 153);
 }
 
 h2.wp-block-heading.has-text-align-center{
     background-color: rgb(156, 153, 153);
+    padding-top: 10px;
 }
 div.wp-block-media-text.is-stacked-on-mobile {
     background-color: rgb(156, 153, 153);
@@ -145,15 +175,16 @@ hr.wp-block-separator.has-alpha-channel-opacity {
 
 h4 {
    text-align: center;
-   color: white;
+   
    background-color: grey;
+   margin-top: 30px;
 }
 
 h4.wp-block-heading.has-text-align-center {
     background-color: rgb(156, 153, 153);
     margin-top: 0ch;
     margin-bottom: 0ch;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 20px;
 }
 
@@ -168,6 +199,9 @@ ol{
 
 h5{
     background-color: rgb(156, 153, 153);
+    text-align: center;
+    padding-top: 5px;
+    
 }
 
 div.wp-block-file {
@@ -176,15 +210,18 @@ div.wp-block-file {
 
 h6 {
     background-color: rgb(156, 153, 153);
+
 }
 
 div.wp-block-embed__wrapper {
     background-color: rgb(156, 153, 153);
 }
 video {
-    padding-left: 10px;
+  
     background-color: rgb(156, 153, 153);
 }
+
+
 
 p.caption{
 display: flex;
@@ -196,6 +233,8 @@ margin-top: 0;
 }
 p{
     display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 figure{
@@ -229,6 +268,7 @@ img.wp-image-44{
     align-content: center;
     max-width: 80%;
 }
+
 
 
 @media screen and (max-width: 637px) {

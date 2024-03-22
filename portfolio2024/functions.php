@@ -49,19 +49,19 @@ function register_custom_post_types()
 {
     $arg = [
         'labels' => [
-            'name' => 'Projects',
+            'name' => 'Project',
             'singular_name' => 'Project',
         ],
         'public' => true,
         'has_archive' => true,
-        'rewrite' => ['slug' => 'projects'],
+        'rewrite' => ['slug' => 'project'],
         'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
         'menu_position' => 5,
         'menu_icon' => 'dashicons-portfolio',
         // 'taxonomies' => ['project-categories'], // Name of custom taxonomy. Only need if you have a custom taxonomy
         'show_in_rest' => true,
     ];
-    $post_type_name = 'projects';
+    $post_type_name = 'project';
 
     // Register Albums post type
     register_post_type($post_type_name, $arg);
@@ -101,7 +101,7 @@ function register_custom_taxonomies()
     ];
 
     $taxonomy_name = 'project-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
-    $taxonomy_association = ['projects']; // post types to associate with this taxonomy
+    $taxonomy_association = ['project']; // post types to associate with this taxonomy
 
     register_taxonomy($taxonomy_name, $taxonomy_association, $args);
 }

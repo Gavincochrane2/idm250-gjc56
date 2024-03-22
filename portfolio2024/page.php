@@ -15,7 +15,7 @@
 
   ?>
 
-<p>this is a page.php template</p>
+
 </div>
     <?php get_footer(); ?>
 </body>
